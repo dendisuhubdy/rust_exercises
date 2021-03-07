@@ -16,4 +16,9 @@ fn main() {
 
     let a = [1, 2, 3, 4, 5, 6];
     let a1 = a[0]; // allocated on the stack not on the heap, not flexible
+
+    let t = (1, 'a', false);
+    let f = (2, (1, 'a', false));
+    println!("{} {} {}", t.0, t.1, t.2);
+    println!("{:#?}", f);
 }
